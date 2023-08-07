@@ -34,5 +34,4 @@ Route::put('/{slug}/update', [ResumeController::class, 'update'])->middleware('a
 Route::get('/{slug}/delete', [ResumeController::class, 'destroy'])->middleware('auth')->name('delete');
 Route::get('/{slug}', [ResumeController::class, 'show'])->name('preview');
 Route::post('/search', [ResumeController::class, 'search'])->name('search');
-
 Route::post('/logout',  [UserController::class, 'logout'])->name('logout');
