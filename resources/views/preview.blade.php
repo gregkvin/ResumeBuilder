@@ -87,7 +87,11 @@
             <hr class="border-1.5 border-slate-500 mt-2 mb-3">
         @endif
         
+        @php
+        $educationCount = DB::table('education')->where('resume_id', $resume->id)->count();
+        @endphp
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">    
+            @if($educationCount !== 0)
             <div>
                 <h2 class="text-xl font-semibold mb-2">Education</h2>
                 @php
@@ -102,7 +106,12 @@
                 </div>
                 @endforeach
             </div>
+            @endif
             <hr class="sm:hidden border-1.5 border-slate-500">
+            @php
+            $experienceCount = DB::table('experiences')->where('resume_id', $resume->id)->count();
+            @endphp
+            @if($experienceCount !== 0)
             <div>
                 <h2 class="text-xl font-semibold mb-2">Experience</h2>
                 @php
@@ -121,6 +130,7 @@
                 @endif
                 @endforeach
             </div>
+            @endif
         </div>
         
     </div>

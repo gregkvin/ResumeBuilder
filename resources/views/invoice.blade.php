@@ -101,6 +101,10 @@
             <p class="description">{{$resume->summary}}</p>
         </div>
         @endif
+        @php
+        $educationCount = DB::table('education')->where('resume_id', $resume->id)->count();
+        @endphp
+        @if($educationCount !== 0)
         <div class="section">
             <h2>Education</h2>
             @php
@@ -119,6 +123,11 @@
                 </div>
             @endforeach
         </div>
+        @endif
+        @php
+        $experienceCount = DB::table('experiences')->where('resume_id', $resume->id)->count();
+        @endphp
+        @if($experienceCount !== 0)
         <div class="section">
             <h2>Experience</h2>
             @php
@@ -137,6 +146,7 @@
                 </div>
             @endforeach
         </div>
+        @endif
     </div>
 </body>
 </html>
