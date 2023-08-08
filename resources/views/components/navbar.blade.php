@@ -18,17 +18,13 @@
         <a href="{{url('/')}}"><img src="{{ asset('logo/resumexpress.png') }}" class="w-36" alt="" /></a>
         @endguest
         </div>
-        
       </div>
       @guest
       <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-        
      @endguest
-
      @auth
       <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
         <div class="hidden sm:block">
-      
       <form class="inline" method="POST" action="/logout">
         @csrf
         <button type="submit" class="text-stone-600 hover:text-gray-200 hover:bg-stone-400 rounded-md px-3 py-2 text-md font-medium"><i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp; Logout</button>
@@ -39,8 +35,4 @@
       </div>
     </div>
   </div>
-
 </nav>
-<script>
-
-    </script>
