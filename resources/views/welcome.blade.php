@@ -3,7 +3,7 @@
 <x-navbar />
 <div class="relative isolate px-6 py-2 lg:px-8">
     <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-      <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-[#f4caca] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+      <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-stone-300 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
     </div>
     <div class="mx-auto max-w-2xl py-4">
       <div class="hidden sm:mb-8 sm:flex sm:justify-center">
@@ -13,12 +13,10 @@
         <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">The <span></span> way to create a resume.</h1>
         </div>
         <p class="mt-6 text-lg leading-8 text-gray-600">Through <b>resumexpress</b>, we're dedicated to simplifying your journey to career success. Our user-friendly platform empowers job seekers of all backgrounds to create polished and professional resumes effortlessly.</p>
-
     <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-x-6 items-center justify-center">
     <div class="sm:order-1 mb-4 sm:mb-0">
         <a href="{{route('register')}}" class="rounded-md bg-slate-300 px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-slate-600 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 block w-full md:w-auto">Create resumes</a>
     </div>
-
     <div class="sm:order-2">
     <form class="flex items-center" action="{{ route('search') }}" method="post">   
         @csrf
@@ -39,14 +37,8 @@
 @error('search')
         <p class="text-red-500 mt-4 float-left sm:float-none sm:ml-32 text-xs">Resume not found</p>
     @enderror
-
       </div>
     </div>
-
-    <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-      <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-    </div>
-  </div>
 </div>
 <style>
 .dynamic-text span {
@@ -64,7 +56,7 @@
     position: absolute;
     width:calc(100% + 8px);
     height:100%;
-    background-color: #ffffff;
+    background-color: rgb(245 245 244);
     border-left: 2px solid #8e8b9c;
     right:-8px;
     animation: cursor .8s infinite, typing 20s steps(14) infinite;
