@@ -1,8 +1,6 @@
 <x-layout>
 @section('title', 'Edit Resume')
 <x-navbar />
-
-<!-- component -->
 <div class="p-5 m-0">
 <form method="post" action="{{url($resume->slug.'/update')}}">
         @csrf @method('put')

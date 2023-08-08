@@ -1,4 +1,5 @@
 <x-layout>
+@section('title', 'Resume')
 <x-navbar />
 
 <div class="my-4 mx-8">

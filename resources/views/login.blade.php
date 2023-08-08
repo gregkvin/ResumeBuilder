@@ -1,14 +1,11 @@
 <x-layout>
 @section('title', 'Login')
 <x-navbar />
-
 <div class="flex justify-center">
     <div class="block min-w-sm rounded-lg border border-gray-100 p-6 overflow-hidden">
-    
-        
-             <h1 class="py-8 font-bold text-gray-800 text-center text-3xl font-mono">Sign in to your account</h1>
-                 <form class="space-y-6" action="/login" method="POST">
-                    @csrf
+   <h1 class="py-8 font-bold text-gray-800 text-center text-3xl font-mono">Sign in to your account</h1>
+    <form class="space-y-6" action="/login" method="POST">
+      @csrf
       <div>
         <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
         <div class="mt-3">

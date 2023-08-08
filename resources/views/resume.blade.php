@@ -1,14 +1,12 @@
 <x-layout>
-    @section('title', 'Resume')
+    @section('title', 'Dashboard')
     <x-navbar />
-
     <div class="flex flex-col items-center justify-center py-10">
         <h1 class="text-3xl mb-3 md:text-5xl font-light font-mono text-gray-800 mb-2 text-center">
             Explore <b>My Resumes</b>
         </h1>
         <p class="text-lg text-gray-500">Browse through your saved resume entries</p>
     </div>
-
     @if(count($resumes) == 0)
         <div class="flex justify-center">
             <p>You have not added a resume.</p>

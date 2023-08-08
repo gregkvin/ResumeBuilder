@@ -1,13 +1,10 @@
 <x-layout>
 @section('title', 'Register')
 <x-navbar />
-
 <div class="flex justify-center">
     <div class="block sm:w-512 rounded-lg border border-gray-100 p-6 overflow-hidden">
-    
     <div class="border-b border-gray-900/10 pb-12">
       <h1 class="text-center text-3xl font-mono font-semibold text-gray-900">Let's get started!</h1>
-      
     <form method="POST" action="{{route('store')}}"> 
         @csrf
       <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
