@@ -4,8 +4,19 @@
 
 <!-- component -->
 <div class="p-5 m-0">
+<form method="post" action="{{url($resume->slug.'/update')}}">
+        @csrf @method('put')
 <a href="{{route('index', auth()->user()->id)}}" class="md:p-7 p-2 text-xs text-gray-500"><i class="fa fa-arrow-left">&nbsp;&nbsp;</i>Back to Dashboard</a>
-    <div class="mx-4 p-4">
+<button type="submit" class="text-sm hover:scale-110 focus:outline-none flex justify-center px-2 py-1 rounded font-bold cursor-pointer 
+        hover:bg-slate-200  
+        bg-slate-100 
+        float-right
+        md:mr-16 mr-4
+        text-slate-700 
+        border duration-200 ease-in-out 
+        border-slate-600 transition
+        font-light"><i class="far fa-save mr-1 mt-[3px]"></i><span class="font-bold">Save</span></button>    
+<div class="mx-4 p-4">
         <div class="step-bar">
           <div class="step-line" id="step_line"></div>
           <div class="step step-active" data-title="Personal"></div>
@@ -14,8 +25,6 @@
           <div class="step" data-title="Experiences"></div>
         </div>
     <div class="mt-8 p-4">
-    <form method="post" action="{{url($resume->slug.'/update')}}">
-        @csrf @method('put')
         <div class="form-step form-step-active">
         <div class="flex flex-col md:flex-row">
                 <div class="w-full mx-2 flex-1">
@@ -238,15 +247,6 @@
             </div>
         </div>
       </div>
-      <button type="submit" class="text-sm hover:scale-110 focus:outline-none flex justify-center px-2 py-1 rounded font-bold cursor-pointer 
-        hover:bg-slate-200  
-        bg-slate-100 
-        float-right
-        mr-2
-        text-slate-700 
-        border duration-200 ease-in-out 
-        border-slate-600 transition
-        font-light">Save</button>
     </div>
 </div>
     </div>
