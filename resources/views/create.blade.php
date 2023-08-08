@@ -47,7 +47,7 @@
                 <div class="w-full mx-2 flex-1">
                     <div class="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase"> Profile Summary</div>
                     <div class="bg-white my-2 p-1 flex border border-gray-200 rounded">
-                    <textarea class="w-full p-2" rows="4" cols="60"  placeholder="Describe your profile here..."></textarea>
+                    <textarea class="w-full p-2" rows="4" cols="60"  name="summary" placeholder="Describe your profile here..."></textarea>
                 </div>
             </div>
       </div>

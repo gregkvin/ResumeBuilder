@@ -22,9 +22,7 @@
       </div>
       @guest
       <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-        <div class="hidden sm:block">
-      <a href="/register" class="bg-gray-900 text-white rounded-md px-3 py-2 text-md font-medium" aria-current="page">+ Get Started</a>
-     </div>
+        
      @endguest
 
      @auth
